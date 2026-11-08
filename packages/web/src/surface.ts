@@ -729,7 +729,7 @@ export class PlaywrightSurface {
   back(operation: OperationContext): Promise<void> {
     return this.acted(operation, this.guard(operation, 'navigation', (currentOperation) =>
       this.navigating(async () => {
-        await this.requirePage().goBack({ waitUntil: 'load', timeout: currentOperation.timeoutMs });
+        await this.requirePage().goBack({ waitUntil: 'commit', timeout: currentOperation.timeoutMs });
       }),
     ));
   }
