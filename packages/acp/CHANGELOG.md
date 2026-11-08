@@ -1,5 +1,11 @@
 # @e2e-dev/acp
 
+## 0.1.2
+
+### Patch Changes
+
+- [#1626](https://github.com/tester-army/e2e/pull/1626) [`c9783a0`](https://github.com/tester-army/e2e/commit/c9783a0666ffea9af4d156d1154657fb94b4af1b) Thanks [@Varshith-Kali](https://github.com/Varshith-Kali)! - Fix `WORKER_CRASH (EPERM)` on Windows when an ACP session ends: a failed session directory removal no longer crashes the worker and is retried after the agent exits.
+
 ## 0.1.1
 
 ### Patch Changes
